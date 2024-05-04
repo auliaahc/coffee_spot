@@ -100,15 +100,15 @@ flutter:
         - asset: assets/fonts/Poppins-ExtraBold.ttf
         - asset: assets/fonts/Poppins-Bold.ttf
         - asset: assets/fonts/Poppins-Black.ttf
-        - asset: assets/fonts/BlackItalic.ttf
-        - asset: assets/fonts/BoldItalic.ttf
-        - asset: assets/fonts/ExtraBoldItalic.ttf
-        - asset: assets/fonts/ExtraLightItalic.ttf
-        - asset: assets/fonts/Italic.ttf
-        - asset: assets/fonts/LightItalic.ttf
-        - asset: assets/fonts/MediumItalic.ttf
-        - asset: assets/fonts/SemiBoldItalic.ttf
-        - asset: assets/fonts/ThinItalic.ttf
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
