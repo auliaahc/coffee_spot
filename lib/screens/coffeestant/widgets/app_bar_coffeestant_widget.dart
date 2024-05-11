@@ -1,4 +1,4 @@
-import 'package:coffee_spot/constants/text_style_constant.dart';
+import 'package:coffee_spot/widgets/app_bar_global_widget.dart';
 import 'package:flutter/material.dart';
 
 class AppBarCoffeestantWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -6,13 +6,7 @@ class AppBarCoffeestantWidget extends StatelessWidget implements PreferredSizeWi
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      centerTitle: true,
-      title: Text(
-        'Coffeestant',
-        style: TextStyleConstant.appbar
-      ),
-    );
+    return const AppBarGlobalWidget(title: 'Coffeestant');
   }
 
   @override
