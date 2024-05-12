@@ -37,59 +37,57 @@ class HeaderCafeDetailWidget extends StatelessWidget {
                   left: 27,
                   right: 27,
                 ),
-                child: Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        provider.name,
-                        style: TextStyleConstant.nameDetailCafe,
-                      ),
-                      const SizedBox(height: 7),
-                      Text(
-                        provider.address,
-                        style: TextStyleConstant.headerRegularDetailCafe,
-                      ),
-                      const SizedBox(height: 20),
-                      Divider(
-                        color: ColorConstant.gray7.withOpacity(0.3),
-                        height: 0.5,
-                      ),
-                      const SizedBox(height: 20),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.schedule,
-                            color: ColorConstant.primary,
-                            size: 16,
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            provider.operationalHour,
-                            style: TextStyleConstant.headerRegularDetailCafe,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 20),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.call,
-                            color: ColorConstant.primary,
-                            size: 16,
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            provider.whatsappNumber ?? '-',
-                            style: TextStyleConstant.headerRegularDetailCafe,
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      provider.name,
+                      style: TextStyleConstant.nameDetailCafe,
+                    ),
+                    const SizedBox(height: 7),
+                    Text(
+                      provider.address,
+                      style: TextStyleConstant.headerRegularDetailCafe,
+                    ),
+                    const SizedBox(height: 20),
+                    Divider(
+                      color: ColorConstant.gray7.withOpacity(0.3),
+                      height: 0.5,
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.schedule,
+                          color: ColorConstant.primary,
+                          size: 16,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          provider.operationalHour,
+                          style: TextStyleConstant.headerRegularDetailCafe,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.call,
+                          color: ColorConstant.primary,
+                          size: 16,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          provider.whatsappNumber ?? '-',
+                          style: TextStyleConstant.headerRegularDetailCafe,
+                        )
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ),

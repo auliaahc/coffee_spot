@@ -13,6 +13,7 @@ class DetailCafeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: const AppBarDetailCafeWidget(),
       extendBodyBehindAppBar: true,
       backgroundColor: ColorConstant.gray1,
