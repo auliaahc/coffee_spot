@@ -1,4 +1,4 @@
-// import 'package:coffee_spot/screens/detail_cafe/detail_cafe_view_model.dart';
+import 'package:coffee_spot/screens/detail_cafe/detail_cafe_view_model.dart';
 import 'package:coffee_spot/screens/home/home_view_model.dart';
 import 'package:coffee_spot/widgets/simple_cafe_item_global_widget.dart';
 import 'package:coffee_spot/widgets/sub_header_global_widget.dart';
@@ -27,8 +27,8 @@ class ListOpenCafesHomeWidget extends StatelessWidget {
                     final cafe = listCafesToShow[index];
                     return SimpleCafeItemGlobalWidget(
                       onTap: () {
-                        // final detailCafeViewModel = Provider.of<DetailCafeViewModel>(context, listen: false);
-                        // detailCafeViewModel.selectedCafe = cafe;
+                        final detailCafeViewModel = Provider.of<DetailCafeViewModel>(context, listen: false);
+                        detailCafeViewModel.selectedCafe = cafe;
                         Navigator.pushNamed(context, '/details');
                       },
                       name: cafe.name,
