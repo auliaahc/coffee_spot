@@ -1,5 +1,5 @@
 import 'package:coffee_spot/constants/color_constant.dart';
-import 'package:coffee_spot/env/env.dart';
+import 'package:coffee_spot/utils/env/env.dart';
 import 'package:coffee_spot/provider/global_provider.dart';
 import 'package:coffee_spot/screens/coffeestant/coffestant_screen.dart';
 import 'package:coffee_spot/screens/coffeestant/coffestant_view_model.dart';
