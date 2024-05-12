@@ -11,7 +11,7 @@ class SearchScreen extends StatelessWidget {
     return const Scaffold(
       appBar: AppBarSearchWidget(),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: EdgeInsets.only(right: 20, left: 20, top: 10),
         child: Column(
           children: [
             InputFieldSearchWidget(),

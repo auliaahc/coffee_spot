@@ -10,8 +10,7 @@ class InputFieldSearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final searchViewModel =
-        Provider.of<SearchViewModel>(context, listen: false);
+    final searchViewModel = Provider.of<SearchViewModel>(context, listen: false);
     return Container(
       height: 48,
       decoration: BoxConstant.decoration,
@@ -19,11 +18,18 @@ class InputFieldSearchWidget extends StatelessWidget {
         onChanged: (value) {
           searchViewModel.onChangedSearchInput(value);
         },
+        autofocus: true,
         cursorColor: ColorConstant.primary,
         controller: searchViewModel.searchInputController,
         textInputAction: TextInputAction.search,
         style: TextStyleConstant.inputFieldSearch,
         decoration: InputDecoration(
+          suffixIcon: IconButton(
+            onPressed: () {
+              searchViewModel.clearCurrentSearchInput();
+            },
+            icon: Icon(Icons.cancel, color: ColorConstant.gray5),
+          ),
           prefixIcon: Icon(Icons.search, color: ColorConstant.primary),
           contentPadding: const EdgeInsets.only(left: 50, right: 17, top: 12),
           hintText: 'Search any cafe',

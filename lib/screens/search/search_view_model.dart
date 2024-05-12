@@ -18,6 +18,13 @@ class SearchViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
+  void clearCurrentSearchInput() {
+    searchInputController.clear();
+    searchInput = '';
+    _searchResult = [];
+    notifyListeners();
+  }
+
   void getSearchResult() {
     if (searchInput == '') {
       _searchResult.clear();
