@@ -13,6 +13,8 @@ class HomeViewModel extends ChangeNotifier {
   List<CafeModel> get cafesByRating => _cafesByRating;
   List<CafeModel> _cafesByLikes = [];
   List<CafeModel> get cafesByLikes => _cafesByLikes;
+  final ValueNotifier<bool> _isConnected = ValueNotifier<bool>(true);
+  ValueNotifier<bool> get isConnected => _isConnected;
 
   void fetchCafesDataByStatus() {
     for (var element in _allCafes) {
@@ -62,10 +64,12 @@ class HomeViewModel extends ChangeNotifier {
         fetchCafesDataByStatus();
         fetchCafesDataByTotalLikes();
         fetchCafesDataByRating();
+        _isConnected.value = true;
         notifyListeners();
       },
       onError: (error) {
-        throw Exception('Error Fetch Data All Cafes $error');
+        // print("Error fetch data: $error");
+        _isConnected.value = false;
       },
     );
   }

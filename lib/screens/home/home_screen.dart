@@ -50,6 +50,23 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      floatingActionButton: ValueListenableBuilder<bool>(
+        valueListenable: Provider.of<HomeViewModel>(context).isConnected,
+        builder: (context, isConnected, child) {
+          if (!isConnected) {
+            return FloatingActionButton(
+              backgroundColor: ColorConstant.errorColor,
+              onPressed: () {
+                const snackBar = SnackBar(content: Text('Failed to fetch cafes. Please check your internet connection.'));
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              },
+              child: Icon(Icons.error, color: ColorConstant.gray1),
+            );
+          } else {
+            return Container();
+          }
+        },
+      ),
     );
   }
 }

@@ -127,4 +127,10 @@ class TextStyleConstant {
     fontWeight: FontWeight.w600,
     color: ColorConstant.secondary,
   );
+  static TextStyle headerHome1 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
+    fontSize: 18,
+    color: ColorConstant.secondary,
+  );
 }

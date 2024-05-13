@@ -14,14 +14,12 @@ import 'package:coffee_spot/screens/reviews/review_screen.dart';
 import 'package:coffee_spot/screens/search/search_screen.dart';
 import 'package:coffee_spot/screens/search/search_view_model.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:provider/provider.dart';
 import 'utils/firebase/firebase_options.dart';
 
 void main() async {
-  BindingBase.debugZoneErrorsAreFatal = true;
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
