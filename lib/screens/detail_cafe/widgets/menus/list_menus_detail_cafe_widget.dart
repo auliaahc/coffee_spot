@@ -29,6 +29,7 @@ class ListMenusDetailCafeWidget extends StatelessWidget {
                     name: menu.name,
                     price: menu.price,
                     image: menu.image,
+                    category: menu.category,
                   ),
                   const SizedBox(height: 15),
                 ],

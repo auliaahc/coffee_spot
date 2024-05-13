@@ -8,11 +8,13 @@ class ItemMenusDetailCafeWidget extends StatelessWidget {
   final String name;
   final String price;
   final String image;
+  final String category;
   const ItemMenusDetailCafeWidget({
     super.key,
     required this.name,
     required this.price,
     required this.image,
+    required this.category,
   });
 
   @override
@@ -100,7 +102,7 @@ class ItemMenusDetailCafeWidget extends StatelessWidget {
             ),
             const SizedBox(width: 5),
             Container(
-              width: 55,
+              width: 65,
               height: 25,
               decoration: BoxDecoration(
                 color: ColorConstant.primary,
@@ -108,7 +110,7 @@ class ItemMenusDetailCafeWidget extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  'Food',
+                  category,
                   style: TextStyleConstant.labelMenu,
                 ),
               ),

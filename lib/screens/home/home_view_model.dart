@@ -43,7 +43,8 @@ class HomeViewModel extends ChangeNotifier {
           totalRating += element.rating.toDouble();
         }
         ratingAvg = totalRating / (element.reviews!.length.toDouble());
-        element.ratingAverage = ratingAvg;
+        double finalRatingAvg = double.parse(ratingAvg.toStringAsFixed(1));
+        element.ratingAverage = finalRatingAvg;
       }
     }
   }
