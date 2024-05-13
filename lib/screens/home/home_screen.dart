@@ -5,7 +5,6 @@ import 'package:coffee_spot/screens/home/widgets/most_liked_cafes/list_most_like
 import 'package:coffee_spot/screens/home/widgets/open_cafes/list_open_cafes_home_widget.dart';
 import 'package:coffee_spot/screens/home/widgets/search_field/search_field_home_widget.dart';
 import 'package:coffee_spot/screens/home/widgets/top_rated_cafes/list_top_rated_cafes_home_widget.dart';
-import 'package:coffee_spot/widgets/bottom_navigation_bar_global_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -28,7 +27,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottomNavigationBarGlobalWidget(),
       backgroundColor: ColorConstant.gray1,
       body: const SafeArea(
         child: Padding(

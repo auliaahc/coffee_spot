@@ -15,7 +15,6 @@ class BottomNavigationBarGlobalWidget extends StatelessWidget {
       domeCircleColor: ColorConstant.primary,
       onTabChange: (clickedIndex) {
         provider.selectedIndex = clickedIndex;
-        provider.changeTabs(context);
       },
       selectedIndex: provider.selectedIndex,
       tabs: [

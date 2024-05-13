@@ -1,11 +1,11 @@
 import 'package:coffee_spot/constants/color_constant.dart';
+import 'package:coffee_spot/screens/main_screen.dart';
 import 'package:coffee_spot/utils/env/env.dart';
 import 'package:coffee_spot/provider/global_provider.dart';
 import 'package:coffee_spot/screens/coffeestant/coffestant_screen.dart';
 import 'package:coffee_spot/screens/coffeestant/coffestant_view_model.dart';
 import 'package:coffee_spot/screens/detail_cafe/detail_cafe_screen.dart';
 import 'package:coffee_spot/screens/detail_cafe/detail_cafe_view_model.dart';
-import 'package:coffee_spot/screens/home/home_screen.dart';
 import 'package:coffee_spot/screens/home/home_view_model.dart';
 import 'package:coffee_spot/screens/list_cafes/most_liked/cafe_most_liked_screen.dart';
 import 'package:coffee_spot/screens/list_cafes/open_cafes/open_cafes_screen.dart';
@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
         routes: {
-          '/': (_) => const HomeScreen(),
+          '/': (_) => const MainScreen(),
           '/details': (_) => const DetailCafeScreen(),
           '/reviews': (_) => const ReviewScreen(),
           '/search': (_) => const SearchScreen(),

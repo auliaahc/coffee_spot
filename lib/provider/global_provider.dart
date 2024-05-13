@@ -7,13 +7,4 @@ class GlobalProvider extends ChangeNotifier {
     _selectedIndex = changedIndex;
     notifyListeners();
   }
-
-  void changeTabs (BuildContext context) {
-    if (_selectedIndex == 0) {
-      Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
-    } else if (selectedIndex == 1) {
-      Navigator.of(context).pushNamedAndRemoveUntil('/coffeestant', (route) => false);
-    }
-    notifyListeners();
-  }
 }
