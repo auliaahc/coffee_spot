@@ -15,7 +15,7 @@ class ListOpenCafesWidget extends StatelessWidget {
       return ListView.builder(
           itemCount: homeViewModel.cafesByStatus.length,
           itemBuilder: (context, index) {
-            CafeModel cafe = homeViewModel.cafesByLikes[index];
+            CafeModel cafe = homeViewModel.cafesByStatus[index];
             return CafeItemGlobalWidget(
               name: cafe.name,
               ratingAverage: cafe.ratingAverage,
